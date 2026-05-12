@@ -34,6 +34,7 @@ ReactDOM → takes those elements and renders them to the browser DOM.
 Think of it like this:
 
 React = design the UI
+
 ReactDOM = display the UI in the browser
 1. Creating an Element (React)
 
@@ -53,6 +54,29 @@ Here React creates an element that describes:
 type → "h1"
 props → null
 content → "Hello World"
+the null represents the props object.
+
+Why null?
+
+Because your <h1> has no attributes.
+
+This:
+
+<h1>Hello World</h1>
+
+has:
+
+no className
+no id
+no style
+
+So React uses:
+
+null
+
+meaning:
+
+“No props are provided.”
 
 So internally React creates something like:
 
@@ -63,10 +87,32 @@ So internally React creates something like:
   }
 }
 
+Props are attributes passed to React elements/components to control their behavior, appearance, and data.
+
+if props existed:
+
+React.createElement(
+  "h1",
+  { id: "title" },
+  "Hello"
+);
+
+then:
+
+{
+  type: "h1",
+  props: {
+    id: "title",
+    children: "Hello"
+  }
+}
+
+
 At this point:
 
 Nothing appears on the screen.
 It is just a description of UI.
+
 2. Rendering an Element (ReactDOM)
 
 To actually show that element in the browser, ReactDOM is used.
