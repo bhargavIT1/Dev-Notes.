@@ -1,6 +1,6 @@
 Introducing React.
  
-Q ) What is React? Why React is known as ‘React’?CS
+Q ) What is React? Why React is known as ‘React’?
 
 React is a JavaScript Library. The name ‘React’ was chosen because the library was designed to allow developers to react to changes in state and data within an application, and to update the user interface in a declarative and efficient manner.
 
