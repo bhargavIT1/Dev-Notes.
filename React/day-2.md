@@ -78,3 +78,11 @@ files from different origin than the hosting web page. This
 allows the script to access resources from the server hosting
 the script, such as making HTTP requests or accessing data.
 
+
+Q ) What is {} denotes in react?
+
+classes, etc should come under {}. Whenever
+I'm passing inside {}, will go as tag attributes of h1.
+
+I'm passing inside {}, will go as tag attributes of h1.
+📢 NOTE: React will overwrite everything inside "root"
