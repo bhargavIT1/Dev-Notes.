@@ -68,9 +68,14 @@ This improves security.
 
 5. Improves Availability
 
-If one CDN server fails, another nearby server can still deliver content.
 
 So websites remain online even during failures.
 If one CDN server fails, another nearby server can still deliver content.
+
+Cross Origin:
+ The crossorigin attribute in the script tag enables CrossOrigin Resource Sharing (CORS) for loading external JavaScript
+files from different origin than the hosting web page. This
+allows the script to access resources from the server hosting
+the script, such as making HTTP requests or accessing data.
 
 So websites remain online even during failures.
