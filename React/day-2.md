@@ -84,5 +84,79 @@ Q ) What is {} denotes in react?
 classes, etc should come under {}. Whenever
 I'm passing inside {}, will go as tag attributes of h1.
 
+What is difference between react.development.js and react.production.js files via CDN?
+
+When you use React through a CDN, you usually get two versions:
+
+react.development.js
+react.production.js (or react.production.min.js)
+
+Both contain React, but they are made for different purposes.
+
+1. react.development.js
+
+This version is used while developing your app.
+
+Example:
+
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+Features
+✅ Human-readable code
+
+The file is not compressed, so developers can debug easily.
+
+✅ Gives warnings and error messages
+
+React helps developers by showing detailed warnings.
+
+Example:
+
+Missing key in list
+Invalid props
+Wrong hooks usage
+✅ Easier debugging
+
+Stack traces and error messages are clear.
+
+❌ Bigger file size
+
+Because it contains debugging tools and warnings.
+
+❌ Slower than production version
+
+Extra checks make it slightly slower.
+
+2. react.production.js
+
+This version is used in real/live websites.
+
+Example:
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+
+Notice:
+
+min.js means minimized/compressed.
+Features
+✅ Optimized for speed
+
+All unnecessary development checks are removed.
+
+✅ Smaller file size
+
+The code is compressed/minified.
+
+✅ Faster performance
+
+Better for real users.
+
+❌ No detailed warnings
+
+React removes most developer helper messages.
+
+❌ Harder to debug
+
+The code is compressed into very small unreadable lines.
+
 I'm passing inside {}, will go as tag attributes of h1.
 📢 NOTE: React will overwrite everything inside "root"
