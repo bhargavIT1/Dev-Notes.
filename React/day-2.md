@@ -78,4 +78,3 @@ files from different origin than the hosting web page. This
 allows the script to access resources from the server hosting
 the script, such as making HTTP requests or accessing data.
 
-So websites remain online even during failures.
