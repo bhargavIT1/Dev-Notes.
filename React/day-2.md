@@ -49,6 +49,8 @@ Result:
 Faster websites
 Faster video streaming
 Better user experience
+
+
 2. Reduces Load on Main Server
 
 Instead of millions of users hitting one server, the traffic gets distributed across many CDN servers.
@@ -57,6 +59,7 @@ This prevents:
 
 Server overload
 Crashes during heavy traffic
+
 3. Better Performance During High Traffic
 
 Websites like:
