@@ -9,10 +9,7 @@ CDNs mainly store: Images, Videos, CSS files, JavaScript files, Fonts, Website p
 
 Q) Uses of CDN?
 
-1. Faster Website Loading: A CDN sends data from the closest server to the user, reducing distance and loading time.
-Example: Without CDN → Server in USA serves Indian user
-With CDN → Indian CDN server serves Indian user
-Result: Faster websites, Faster video streaming, better user experience
+1. Faster Website Loading: A CDN sends data from the closest server to the user, reducing distance and loading time. For example if there were no cdn then only one sever which can be anywhere in the world would had to serve all the countries which could have lead to crashing an application but with cdn which are alomost everywhere will lead to faster application loading.
 2. Reduces Load on Main Server: Instead of millions of users hitting one server, the traffic gets distributed across many CDN servers. This prevents: Server overload, Crashes during heavy traffic.
 3. Better Performance During High Traffic: Websites like, Amazon, YouTube, Facebook use CDNs because millions of users access them simultaneously.
 4. Protection Against DDoS Attacks: A CDN can absorb huge amounts of fake traffic and protect the original server. This improves security.
@@ -27,9 +24,6 @@ Q) What is {} denotes in react?
 classes should come under {}. Whenever we are passing inside {}, will go as tag attributes of h1.
 
 Q) What is difference between react.development.js and react.production.js files via CDN?
-
-When you use React through a CDN, you usually get two versions: react.development.js, react.production.js (or react.production.min.js)
-Both contain React, but they are made for different purposes.
 
 1.	react.development.js: This version is used while developing your app.
 
