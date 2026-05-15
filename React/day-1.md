@@ -32,6 +32,7 @@ Q ) Difference between React and ReactDOM ?
 In React there are two different libraries with different responsibilities:
 
 React → creates elements and defines UI structure.
+
 ReactDOM → takes those elements and renders them to the browser DOM.
 
 Think of it like this:
