@@ -6,6 +6,7 @@ Imagine Netflix has only one server in the USA. If someone from India watches a 
 Q) What does a CDN store?
 
 CDNs mainly store: Images, Videos, CSS files, JavaScript files, Fonts, Website pages, App downloads. These are called static assets.
+
 Q) Uses of CDN?
 
 1. Faster Website Loading: A CDN sends data from the closest server to the user, reducing distance and loading time.
@@ -31,23 +32,39 @@ When you use React through a CDN, you usually get two versions: react.developmen
 Both contain React, but they are made for different purposes.
 
 1.	react.development.js: This version is used while developing your app.
+
 Some features are:
+
 •	Human-readable code
+
 •	The file is not compressed, so developers can debug easily.
-•	Gives warnings and error messages
+
+•	Gives warnings and error messages.
+
 •	React helps developers by showing detailed warnings.
 
 But is has some drawbacks also:
+
 •	Bigger file size, because it contains debugging tools and warnings.
+
 •	 Slower than production version, extra checks make it slightly slower.
-3. react.production.js: This version is used in real/live websites.
+
+2. react.production.js: This version is used in real/live websites.
+   
 Some features are:
+
 •	Optimized for speed. All unnecessary development checks are removed.
+
 •	Smaller file size. The code is compressed/minified.
+
 •	Faster performance. Better for real users.
+
 It also has some drawbacks:
+
 •	No detailed warning. React removes most developer helper messages.
+
 •	Harder to debug. The code is compressed into very small unreadable lines.
+
 
 So, while developing we can use develop.js to reduce bugs and later when the development is done and the app is ready to push to production we can replace the development link with production link.
 
