@@ -26,21 +26,3 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 <h1>root.render(heading)</h1>
 
 This means: Take the React element heading and display it inside the root container.
-
-So the flow will look like this:
-
-HTML
-<div id="root"></div>
-       ↑
-       │
-document.getElementById("root")
-       │
-       ↓
-ReactDOM.createRoot(...)
-       │
-       ↓
-root.render(<App />)
-       │
-       ↓
-React UI appears inside the div
-
