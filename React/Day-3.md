@@ -15,7 +15,7 @@ Q) What is root in React?
 
 Root is a React root object. It represents the place in the HTML where React will control and render the UI.
 
-<h1><div id="root"></div></h1>
+<div id="root"></div>
 
 This div is an empty container where React will insert your UI.
 
@@ -23,12 +23,24 @@ Creating the React Root
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-<h1>root.render(heading)</h1>;
+<h1>root.render(heading)</h1>
 
-This means:
+This means: Take the React element heading and display it inside the root container.
 
-Take the React element heading and display it inside the root container.
+So the flow will look like this:
 
+HTML
+<div id="root"></div>
+       ↑
+       │
+document.getElementById("root")
+       │
+       ↓
+ReactDOM.createRoot(...)
+       │
+       ↓
+root.render(<App />)
+       │
+       ↓
+React UI appears inside the div
 
-
-“Take the React element heading and display it inside the root container.
