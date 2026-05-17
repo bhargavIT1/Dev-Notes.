@@ -11,3 +11,6 @@ But unlike `defer`, as soon as the JavaScript file finishes downloading, the bro
 
 So, `async` does not block HTML parsing during download, executes JavaScript as soon as it is ready, and does not guarantee script order.
 
+Q) What is root in React?
+
+Root is a React root object. It represents the place in the HTML where React will control and render the UI.
